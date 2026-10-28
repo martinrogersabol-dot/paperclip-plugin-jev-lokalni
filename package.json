@@ -1,0 +1,51 @@
+{
+  "name": "paperclip-plugin-jev",
+  "version": "0.3.2",
+  "type": "module",
+  "description": "Configurable issue triage and constrained browser decisions for Paperclip using Jev.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewdeng318/paperclip-plugin-jev.git"
+  },
+  "homepage": "https://github.com/andrewdeng318/paperclip-plugin-jev#readme",
+  "bugs": {
+    "url": "https://github.com/andrewdeng318/paperclip-plugin-jev/issues"
+  },
+  "files": [
+    "dist",
+    "src",
+    "esbuild.config.mjs",
+    "tsconfig.json"
+  ],
+  "engines": {
+    "node": ">=24.11"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node ./esbuild.config.mjs",
+    "dev": "node ./esbuild.config.mjs --watch",
+    "test": "node --test",
+    "verify:package": "npm pack --dry-run"
+  },
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js"
+  },
+  "keywords": [
+    "paperclip",
+    "plugin",
+    "connector",
+    "local-model"
+  ],
+  "author": "andrewdeng318",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "2026.916.0"
+  }
+}
