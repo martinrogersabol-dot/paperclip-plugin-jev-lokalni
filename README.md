@@ -1,5 +1,18 @@
 # Jev Issue Triage for Paperclip
 
+## Tato lokální verze (Čeština)
+
+Tento repozitář je lokální vidlice originálního pluginu [Jev Issue Triage](https://github.com/andrewdeng318/paperclip-plugin-jev) pro Paperclip.
+
+**Co je oproti originálu změněné:**
+- Plugin běží výhradně proti **lokálnímu modelu Ornith** na `http://127.0.0.1:8012/v1`. Žádný cloudový poskytovatel ani externí endpoint se nepoužívá.
+- Byly odstraněny všechny cizí služby (TypSafe API a cloudové brány). Pro běh není potřeba žádné externí API heslo.
+
+**Co zůstalo stejné:**
+- Mód triáže issue (vlastník, priorita, typ) i omezená rozhodnutí pro browser (pouze cíl, URL a číselné role elementů) fungují stejně.
+
+Licence: MIT. Soubor `LICENSE` a jména autorů (Andrew Deng) byla zachovana.
+
 Jev Issue Triage is a community plugin that adds AI-assisted routing, prioritization, and constrained browser decisions to [Paperclip](https://github.com/paperclipai/paperclip).
 
 It analyzes a minimized issue snapshot with Jev and returns:
