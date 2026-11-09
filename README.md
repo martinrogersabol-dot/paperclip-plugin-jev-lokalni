@@ -56,13 +56,13 @@ For browser decisions, the plugin sends only the goal, URL, numbered element rol
 
 Automatic modes can update only the issue owner and priority. They do not change status, description, comments, attachments, or relationships.
 
-The provider base URL is fixed to the official TypeSafe endpoint at `https://api.typesafe.ai`. The plugin does not route requests through third-party Jev gateways.
+The provider base URL is fixed to the local Jev endpoint at `http://127.0.0.1:8012/v1`. The plugin does not route requests through any cloud gateway or third-party host, and no external API key is required.
 
 ## Requirements
 
 - Paperclip with plugin support
 - Node.js 24.11 or later for local development
-- A TypeSafe API key from <https://console.typesafe.ai/keys>
+- No external API key required for local runs (the worker targets `http://127.0.0.1:8012/v1` directly)
 
 ## Install
 
